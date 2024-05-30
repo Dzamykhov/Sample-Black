@@ -1,0 +1,166 @@
+/*  */
+@import url(reset.css);
+/*  */
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+._container {
+    width: 70%;
+    margin: 0 auto;
+}
+/*  */
+header {
+    padding: 30px 5px;
+    background-color: #000;
+}
+.header__logo {
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+header a{
+    color: #fff;
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+nav ul {
+    display: flex;
+    margin: 3px 0px 0px 0px;
+}
+nav ul a {
+    transition: all 0.5s ease;
+    font-size: 20px;
+}
+nav ul li:first-child {
+    margin: 0px 25px 0px 0px;
+}
+nav ul li:last-child {
+    margin: 0px 0px 0px 0px;
+}
+nav ul a:hover {
+    color: #ffffffdf;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #ffffffdf;
+    padding: 0px 0px 5px 0px;
+}
+/*  */
+.catalog {
+    color: #fff;
+    flex: 1;
+    padding: 20px 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.catalog h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-item {
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    width: calc(33.333% - 10px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-item h3 {
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    margin: 0;
+}
+
+.product-item p {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+.product-item .price {
+    font-weight: bold;
+    color: #ccc;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.footer {
+    background-color: #111;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    color: #fff;
+}
+
+/* Стили для модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #111;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #333;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
